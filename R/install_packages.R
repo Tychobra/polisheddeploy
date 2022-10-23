@@ -15,7 +15,10 @@ is_installed <- function(dep) {
 #' @noRd
 cran_install <- function(dep, minimal = FALSE, ...) {
 
+
   if (!is_installed(dep)) {
+
+    print(paste0("Installing ", dep$Package))
 
     if (isTRUE(minimal)) {
 
@@ -23,7 +26,7 @@ cran_install <- function(dep, minimal = FALSE, ...) {
         dep$Package,
         version = dep$Version,
         upgrade = 'never',
-        dependencies = dependencies
+        ...
       )
 
     } else {
@@ -32,8 +35,7 @@ cran_install <- function(dep, minimal = FALSE, ...) {
           dep$Package,
           version = dep$Version,
           upgrade = 'never',
-          Ncpus = ncpus,
-          dependencies = dependencies
+          ...
         )
       }, error = function(err) {
 
@@ -44,8 +46,7 @@ cran_install <- function(dep, minimal = FALSE, ...) {
           version = dep$Version,
           upgrade = 'never',
           repos = 'https://cran.rstudio.com/',
-          Ncpus = ncpus,
-          dependencies = deps_string
+          ...
         )
 
       })
