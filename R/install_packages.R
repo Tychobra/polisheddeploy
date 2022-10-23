@@ -89,7 +89,7 @@ github_install <- function(dep, ...) {
 #' @importFrom jsonlite read_json
 #'
 #'
-install_packages <- function(deps_path, minimal, gh_pat, ...) {
+install_packages <- function(deps_path, minimal = FALSE, gh_pat = NA, ...) {
   # install the "remotes" R package from CRAN
 
   deps <- jsonlite::read_json(deps_path)
