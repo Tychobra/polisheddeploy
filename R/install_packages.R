@@ -89,8 +89,6 @@ install_package_deps <- function(deps_path, ncpus, minimal, gh_pat) {
 
   parsed <- parse_deps(deps)
 
-  install.packages('remotes')
-
   for (dep_ in parsed$cran_deps) {
     cran_install(dep_, Ncpus = ncpus, minimal = minimal)
   }
