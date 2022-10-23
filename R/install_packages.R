@@ -86,7 +86,7 @@ github_install <- function(dep, ...) {
 #'
 #' @export
 #'
-#' importFrom jsonlite read_json
+#' @importFrom jsonlite read_json
 #'
 #'
 install_packages <- function(deps_path, minimal, gh_pat, ...) {
