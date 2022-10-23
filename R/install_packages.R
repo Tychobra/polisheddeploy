@@ -3,7 +3,7 @@ is_installed <- function(dep) {
 
   pkg <- pkgs[pkgs$Package == dep$Package && version == dep$Version, ]
 
-  if (nrow(pkg) == 0) {
+  if (nrow(pkg) == 1L) {
     out <- TRUE
   } else {
     out <- FALSE
