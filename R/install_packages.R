@@ -77,12 +77,19 @@ github_install <- function(dep, ...) {
   )
 }
 
+#' install_packages
+#'
+#' @param deps_path file path to the deps.json file.
+#' @param minimal T/F
+#' @param gh_pat GitHub PAT
+#' @param ... additional arguments to pass to the install function.
 #'
 #' @export
 #'
+#' importFrom jsonlite read_json
 #'
 #'
-install_package_deps <- function(deps_path, ncpus, minimal, gh_pat) {
+install_packages <- function(deps_path, minimal, gh_pat, ...) {
   # install the "remotes" R package from CRAN
 
   deps <- jsonlite::read_json(deps_path)

@@ -1,4 +1,11 @@
+#' parse_deps
+#'
+#' Parse the deps
+#'
+#' @param deps
+#'
 #' @export
+#'
 parse_deps <- function(deps) {
   cran_deps <- list()
   github_deps <- list()
