@@ -1,0 +1,16 @@
+Type: Package
+Package: polisheddeploy
+Title: Dockerize and Deploy Shiny apps to Polished Hosting
+Version: 0.0.1.9000
+Authors@R: c(
+  person("Andy", "Merlino", email = "andy.merlino@tychobra.com", role = c("aut", "cre")))
+Maintainer: Andy Merlino <andy.merlino@tychobra.com>
+Description: Dockerize and Deploy Shiny apps to Polished Hosting.
+License: file LICENSE
+Imports:
+    jsonlite,
+    remotes
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Roxygen: list(markdown = TRUE)
