@@ -1,7 +1,7 @@
 is_installed <- function(dep) {
   pkgs <- as.data.frame(installed.packages())
 
-  pkg <- pkgs[pkgs$Package == dep$Package && version == dep$Version, ]
+  pkg <- pkgs[pkgs$Package == dep$Package & pkgs$Version == dep$Version, ]
 
   if (nrow(pkg) == 1L) {
     out <- TRUE
@@ -90,7 +90,7 @@ github_install <- function(dep, ...) {
 #' @importFrom jsonlite read_json
 #'
 #'
-install_packages <- function(deps_path, minimal = FALSE, gh_pat = NA, ncpus = 4, ...) {
+install_packages <- function(deps_path, minimal = FALSE, gh_pat = NULL, ncpus = 4, ...) {
   # install the "remotes" R package from CRAN
 
   deps <- jsonlite::read_json(deps_path)
