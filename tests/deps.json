@@ -1,0 +1,408 @@
+{
+  "assertthat": {
+    "Package": "assertthat",
+    "Repository": "CRAN",
+    "Version": "0.2.1"
+  },
+  "attachment": {
+    "Package": "attachment",
+    "Repository": "CRAN",
+    "Version": "0.3.0"
+  },
+  "attempt": {
+    "Package": "attempt",
+    "Repository": "CRAN",
+    "Version": "0.3.1"
+  },
+  "automagic": {
+    "Package": "automagic",
+    "Repository": "CRAN",
+    "Version": "0.5.1"
+  },
+  "callr": {
+    "Package": "callr",
+    "Repository": "CRAN",
+    "Version": "3.7.2"
+  },
+  "cli": {
+    "Package": "cli",
+    "Repository": "CRAN",
+    "Version": "3.4.1"
+  },
+  "clipr": {
+    "Package": "clipr",
+    "Repository": "CRAN",
+    "Version": "0.8.0"
+  },
+  "config": {
+    "Package": "config",
+    "Repository": "CRAN",
+    "Version": "0.3.1"
+  },
+  "covr": {
+    "Package": "covr",
+    "Repository": "CRAN",
+    "Version": "3.6.1"
+  },
+  "covrpage": {
+    "Package": "covrpage",
+    "GithubUsername": "yonicd",
+    "GithubRepo": "covrpage",
+    "GithubRef": "HEAD",
+    "GithubSHA1": "b5e63902e3a33fbc5f927ef7a300477589536854"
+  },
+  "crayon": {
+    "Package": "crayon",
+    "Repository": "CRAN",
+    "Version": "1.5.2"
+  },
+  "curl": {
+    "Package": "curl",
+    "Repository": "CRAN",
+    "Version": "4.3.3"
+  },
+  "desc": {
+    "Package": "desc",
+    "Repository": "CRAN",
+    "Version": "1.4.2"
+  },
+  "devtools": {
+    "Package": "devtools",
+    "Repository": "CRAN",
+    "Version": "2.4.5"
+  },
+  "digest": {
+    "Package": "digest",
+    "Repository": "CRAN",
+    "Version": "0.6.30"
+  },
+  "dplyr": {
+    "Package": "dplyr",
+    "Repository": "CRAN",
+    "Version": "1.0.10"
+  },
+  "DT": {
+    "Package": "DT",
+    "Repository": "CRAN",
+    "Version": "0.26"
+  },
+  "ellipsis": {
+    "Package": "ellipsis",
+    "Repository": "CRAN",
+    "Version": "0.3.2"
+  },
+  "fs": {
+    "Package": "fs",
+    "Repository": "CRAN",
+    "Version": "1.5.2"
+  },
+  "gert": {
+    "Package": "gert",
+    "Repository": "CRAN",
+    "Version": "1.9.1"
+  },
+  "gh": {
+    "Package": "gh",
+    "Repository": "CRAN",
+    "Version": "1.3.1"
+  },
+  "git2r": {
+    "Package": "git2r",
+    "Repository": "CRAN",
+    "Version": "0.30.1"
+  },
+  "glue": {
+    "Package": "glue",
+    "Repository": "CRAN",
+    "Version": "1.6.2"
+  },
+  "golem": {
+    "Package": "golem",
+    "Repository": "CRAN",
+    "Version": "0.3.4"
+  },
+  "here": {
+    "Package": "here",
+    "Repository": "CRAN",
+    "Version": "1.0.1"
+  },
+  "htmltools": {
+    "Package": "htmltools",
+    "Repository": "CRAN",
+    "Version": "0.5.3"
+  },
+  "httpuv": {
+    "Package": "httpuv",
+    "Repository": "CRAN",
+    "Version": "1.6.6"
+  },
+  "httr": {
+    "Package": "httr",
+    "Repository": "CRAN",
+    "Version": "1.4.4"
+  },
+  "jose": {
+    "Package": "jose",
+    "Repository": "CRAN",
+    "Version": "1.2.0"
+  },
+  "jsonlite": {
+    "Package": "jsonlite",
+    "Repository": "CRAN",
+    "Version": "1.8.3"
+  },
+  "knitr": {
+    "Package": "knitr",
+    "Repository": "CRAN",
+    "Version": "1.40"
+  },
+  "later": {
+    "Package": "later",
+    "Repository": "CRAN",
+    "Version": "1.3.0"
+  },
+  "lifecycle": {
+    "Package": "lifecycle",
+    "Repository": "CRAN",
+    "Version": "1.0.3"
+  },
+  "lubridate": {
+    "Package": "lubridate",
+    "Repository": "CRAN",
+    "Version": "1.8.0"
+  },
+  "magrittr": {
+    "Package": "magrittr",
+    "Repository": "CRAN",
+    "Version": "2.0.3"
+  },
+  "memoise": {
+    "Package": "memoise",
+    "Repository": "CRAN",
+    "Version": "2.0.1"
+  },
+  "miniUI": {
+    "Package": "miniUI",
+    "Repository": "CRAN",
+    "Version": "0.1.1.1"
+  },
+  "otp": {
+    "Package": "otp",
+    "Repository": "CRAN",
+    "Version": "0.1.0"
+  },
+  "parsedate": {
+    "Package": "parsedate",
+    "Repository": "CRAN",
+    "Version": "1.3.0"
+  },
+  "pillar": {
+    "Package": "pillar",
+    "Repository": "CRAN",
+    "Version": "1.8.1"
+  },
+  "pkgbuild": {
+    "Package": "pkgbuild",
+    "Repository": "CRAN",
+    "Version": "1.3.1"
+  },
+  "pkgdown": {
+    "Package": "pkgdown",
+    "Repository": "CRAN",
+    "Version": "2.0.6"
+  },
+  "pkgload": {
+    "Package": "pkgload",
+    "Repository": "CRAN",
+    "Version": "1.3.0"
+  },
+  "polished": {
+    "Package": "polished",
+    "GithubUsername": "tychobra",
+    "GithubRepo": "polished",
+    "GithubRef": "deps_json",
+    "GithubSHA1": "2452b66daaf8c236800b0dee0332054b708de681"
+  },
+  "prettyunits": {
+    "Package": "prettyunits",
+    "Repository": "CRAN",
+    "Version": "1.1.1"
+  },
+  "processx": {
+    "Package": "processx",
+    "Repository": "CRAN",
+    "Version": "3.7.0"
+  },
+  "profvis": {
+    "Package": "profvis",
+    "Repository": "CRAN",
+    "Version": "0.3.7"
+  },
+  "promises": {
+    "Package": "promises",
+    "Repository": "CRAN",
+    "Version": "1.2.0.1"
+  },
+  "purrr": {
+    "Package": "purrr",
+    "Repository": "CRAN",
+    "Version": "0.3.5"
+  },
+  "R6": {
+    "Package": "R6",
+    "Repository": "CRAN",
+    "Version": "2.5.1"
+  },
+  "rappdirs": {
+    "Package": "rappdirs",
+    "Repository": "CRAN",
+    "Version": "0.3.3"
+  },
+  "rcmdcheck": {
+    "Package": "rcmdcheck",
+    "Repository": "CRAN",
+    "Version": "1.4.0"
+  },
+  "Rcpp": {
+    "Package": "Rcpp",
+    "Repository": "CRAN",
+    "Version": "1.0.9"
+  },
+  "rematch": {
+    "Package": "rematch",
+    "Repository": "CRAN",
+    "Version": "1.0.1"
+  },
+  "remotes": {
+    "Package": "remotes",
+    "Repository": "CRAN",
+    "Version": "2.4.2"
+  },
+  "rhub": {
+    "Package": "rhub",
+    "Repository": "CRAN",
+    "Version": "1.1.2"
+  },
+  "rlang": {
+    "Package": "rlang",
+    "Repository": "CRAN",
+    "Version": "1.0.6"
+  },
+  "rmarkdown": {
+    "Package": "rmarkdown",
+    "Repository": "CRAN",
+    "Version": "2.17"
+  },
+  "roxygen2": {
+    "Package": "roxygen2",
+    "Repository": "CRAN",
+    "Version": "7.2.1"
+  },
+  "rprojroot": {
+    "Package": "rprojroot",
+    "Repository": "CRAN",
+    "Version": "2.0.3"
+  },
+  "rstudioapi": {
+    "Package": "rstudioapi",
+    "Repository": "CRAN",
+    "Version": "0.14"
+  },
+  "rversions": {
+    "Package": "rversions",
+    "Repository": "CRAN",
+    "Version": "2.1.2"
+  },
+  "sessioninfo": {
+    "Package": "sessioninfo",
+    "Repository": "CRAN",
+    "Version": "1.2.2"
+  },
+  "shiny": {
+    "Package": "shiny",
+    "Repository": "CRAN",
+    "Version": "1.7.2"
+  },
+  "shinycssloaders": {
+    "Package": "shinycssloaders",
+    "Repository": "CRAN",
+    "Version": "1.0.0"
+  },
+  "shinydashboard": {
+    "Package": "shinydashboard",
+    "Repository": "CRAN",
+    "Version": "0.7.2"
+  },
+  "shinyFeedback": {
+    "Package": "shinyFeedback",
+    "GithubUsername": "merlinoa",
+    "GithubRepo": "shinyFeedback",
+    "GithubRef": "HEAD",
+    "GithubSHA1": "b741fedab6736b9047580734adcff9b97cc808c3"
+  },
+  "shinyjs": {
+    "Package": "shinyjs",
+    "Repository": "CRAN",
+    "Version": "2.1.0"
+  },
+  "shinyWidgets": {
+    "Package": "shinyWidgets",
+    "Repository": "CRAN",
+    "Version": "0.7.4"
+  },
+  "stringr": {
+    "Package": "stringr",
+    "Repository": "CRAN",
+    "Version": "1.4.1"
+  },
+  "testthat": {
+    "Package": "testthat",
+    "Repository": "CRAN",
+    "Version": "3.1.5"
+  },
+  "tibble": {
+    "Package": "tibble",
+    "Repository": "CRAN",
+    "Version": "3.1.8"
+  },
+  "tidyr": {
+    "Package": "tidyr",
+    "Repository": "CRAN",
+    "Version": "1.2.1"
+  },
+  "urlchecker": {
+    "Package": "urlchecker",
+    "Repository": "CRAN",
+    "Version": "1.0.1"
+  },
+  "usethis": {
+    "Package": "usethis",
+    "Repository": "CRAN",
+    "Version": "2.1.6"
+  },
+  "uuid": {
+    "Package": "uuid",
+    "Repository": "CRAN",
+    "Version": "1.1-0"
+  },
+  "whisker": {
+    "Package": "whisker",
+    "Repository": "CRAN",
+    "Version": "0.4"
+  },
+  "whoami": {
+    "Package": "whoami",
+    "Repository": "CRAN",
+    "Version": "1.3.0"
+  },
+  "withr": {
+    "Package": "withr",
+    "Repository": "CRAN",
+    "Version": "2.5.0"
+  },
+  "yaml": {
+    "Package": "yaml",
+    "Repository": "CRAN",
+    "Version": "2.3.6"
+  }
+}
