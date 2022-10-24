@@ -4,7 +4,7 @@
 \alias{install_packages}
 \title{install_packages}
 \usage{
-install_packages(deps_path, minimal, gh_pat, ...)
+install_packages(deps_path, minimal = FALSE, gh_pat = NULL, ncpus = 4, ...)
 }
 \arguments{
 \item{deps_path}{file path to the deps.json file.}
