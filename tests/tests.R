@@ -7,7 +7,9 @@ deps <- parse_deps(deps_list)
 install_packages("deps.json", gh_pat = NULL)
 
 polisheddeploy:::github_install(
-  deps$github_deps[[1]]
+  deps$github_deps[[1]],
+  auth_token = NULL,
+  force = TRUE
 )
 
 polisheddeploy:::is_installed(hold_dep)
@@ -24,7 +26,7 @@ polisheddeploy:::github_install(
   cp_dep, force = TRUE
 )
 
-list(
+sf_dep <- list(
   "Package" = "shinyFeedback",
   "GithubUsername" = "merlinoa",
   "GithubRepo" = "shinyFeedback",
@@ -32,7 +34,7 @@ list(
   "GithubSHA1" = "b741fedab6736b9047580734adcff9b97cc808c3"
 )
 
-polisheddeploy:::github_install(, Ncpus = ncpus, auth_token = NULL, force = TRUE)
+polisheddeploy:::github_install(sf_dep, Ncpus = ncpus, auth_token = NULL, force = TRUE)
 
 
-github_install(dep_, Ncpus = ncpus, auth_token = gh_pat)
+#github_install(dep_, Ncpus = ncpus, auth_token = gh_pat)
