@@ -74,9 +74,9 @@ install_packages <- function(deps_path, gh_pat = NULL, Ncpus = 4, ...) {
 
   parsed <- parse_deps(deps)
 
+  cran_failures <- list()
   for (dep_ in parsed$cran_deps) {
 
-    cran_failures <- list()
     tryCatch({
 
       cran_install(dep_, Ncpus = Ncpus)
@@ -97,7 +97,7 @@ install_packages <- function(deps_path, gh_pat = NULL, Ncpus = 4, ...) {
     github_install(dep_, Ncpus = Ncpus, auth_token = gh_pat)
   }
 
-  for (dep_ in dep_failures) {
+  for (dep_ in cran_failures) {
     cran_install(dep_, Ncpus = Ncpus, repos = 'https://cran.rstudio.com/')
   }
 
