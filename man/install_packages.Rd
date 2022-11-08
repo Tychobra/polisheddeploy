@@ -4,14 +4,10 @@
 \alias{install_packages}
 \title{install_packages}
 \usage{
-install_packages(deps_path, minimal = FALSE, gh_pat = NULL, ncpus = 4, ...)
+install_packages(deps_path, ...)
 }
 \arguments{
 \item{deps_path}{file path to the deps.json file.}
-
-\item{minimal}{T/F}
-
-\item{gh_pat}{GitHub PAT}
 
 \item{...}{additional arguments to pass to the install function.}
 }
