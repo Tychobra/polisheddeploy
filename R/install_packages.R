@@ -46,6 +46,8 @@ cran_install <- function(dep, minimal = FALSE, ...) {
           version = dep$Version,
           upgrade = 'never',
           repos = 'https://cran.rstudio.com/',
+          # do not install dependencies as installation from this repo is slow
+          dependencies = FALSE,
           ...
         )
 
