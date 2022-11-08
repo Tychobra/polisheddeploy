@@ -13,44 +13,20 @@ is_installed <- function(dep) {
 }
 
 #' @noRd
-cran_install <- function(dep, minimal = FALSE, ...) {
+cran_install <- function(dep, ...) {
 
 
   if (!is_installed(dep)) {
 
     print(paste0("Installing ", dep$Package))
 
-    if (isTRUE(minimal)) {
+    remotes::install_version(
+      dep$Package,
+      version = dep$Version,
+      upgrade = 'never',
+      ...
+    )
 
-      remotes::install_version(
-        dep$Package,
-        version = dep$Version,
-        upgrade = 'never',
-        ...
-      )
-
-    } else {
-      tryCatch({
-        remotes::install_version(
-          dep$Package,
-          version = dep$Version,
-          upgrade = 'never',
-          ...
-        )
-      }, error = function(err) {
-
-        print(err)
-
-        remotes::install_version(
-          dep$Package,
-          version = dep$Version,
-          upgrade = 'never',
-          repos = 'https://cran.rstudio.com/',
-          ...
-        )
-
-      })
-    }
   }
 }
 
@@ -81,8 +57,9 @@ github_install <- function(dep, ...) {
 #' install_packages
 #'
 #' @param deps_path file path to the deps.json file.
-#' @param minimal T/F
 #' @param gh_pat GitHub PAT
+#' @param Ncpus nnumber of cpus to use.  This is passed to the same argument for
+#' `install.packages()`.  We include it here becasue we are changing the default.
 #' @param ... additional arguments to pass to the install function.
 #'
 #' @export
@@ -90,7 +67,7 @@ github_install <- function(dep, ...) {
 #' @importFrom jsonlite read_json
 #'
 #'
-install_packages <- function(deps_path, minimal = FALSE, gh_pat = NULL, ncpus = 4, ...) {
+install_packages <- function(deps_path, gh_pat = NULL, Ncpus = 4, ...) {
   # install the "remotes" R package from CRAN
 
   deps <- jsonlite::read_json(deps_path)
@@ -98,11 +75,30 @@ install_packages <- function(deps_path, minimal = FALSE, gh_pat = NULL, ncpus = 
   parsed <- parse_deps(deps)
 
   for (dep_ in parsed$cran_deps) {
-    cran_install(dep_, Ncpus = ncpus, minimal = minimal)
+
+    cran_failures <- list()
+    tryCatch({
+
+      cran_install(dep_, Ncpus = Ncpus)
+
+    }, error = function(err) {
+
+      print(err)
+      # keep track of failed package installs.  We will attempt to install them
+      # from different CRAN mirror after attempting to install all other packafes
+      cran_failures <<- append(cran_failures, list(dep_))
+
+    })
   }
 
+
+
   for (dep_ in parsed$github_deps) {
-    github_install(dep_, Ncpus = ncpus, auth_token = gh_pat)
+    github_install(dep_, Ncpus = Ncpus, auth_token = gh_pat)
+  }
+
+  for (dep_ in dep_failures) {
+    cran_install(dep_, Ncpus = Ncpus, repos = 'https://cran.rstudio.com/')
   }
 
   invisible(NULL)
