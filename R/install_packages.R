@@ -41,9 +41,8 @@ cran_install <- function(dep, ...) {
 #'  GithubSHA1 = "b5e63902e3a33fbc5f927ef7a300477589536854"
 #' )
 #'
-#' github_install_string(test_dep)
-#' github_install_string(test_dep, ncpus = 2)
-#' github_install_string(test_dep, ncpus = 2, gh_pat="gh_mypat")
+#' github_install(test_dep)
+#' github_install(test_dep, auth_token="gh_mypat")
 github_install <- function(dep, ...) {
 
   remotes::install_github(
