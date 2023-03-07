@@ -87,14 +87,12 @@ install_packages <- function(deps_path, ...) {
     })
   }
 
-
+  for (dep_ in cran_failures) {
+    cran_install(dep_, repos = 'https://cran.rstudio.com/', ...)
+  }
 
   for (dep_ in parsed$github_deps) {
     github_install(dep_, ...)
-  }
-
-  for (dep_ in cran_failures) {
-    cran_install(dep_, repos = 'https://cran.rstudio.com/', ...)
   }
 
   invisible(NULL)
